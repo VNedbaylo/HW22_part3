@@ -1,0 +1,126 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+* a {
+  color: black;
+}
+
+.container {
+  height: 100vh;
+  overflow-x: auto;
+}
+
+.main-hdr {
+  color: #dff8fc;
+  background-color: #008a8a;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  position: sticky;
+  left: 0;
+}
+
+.boards {
+  height: 90%;
+  background-color: #029e9d;
+  padding: 1rem;
+  display: inline-grid;
+  grid-template-columns: repeat(5, 330px);
+  grid-template-rows: 100%;
+  grid-column-gap: 1rem;
+  grid-template-areas: "ToDo InProgress Test Fix Done";
+}
+
+.ToDo {
+  grid-area: ToDo;
+}
+
+.InProgress {
+  grid-area: InProgress;
+}
+
+.Test {
+  grid-area: Test;
+}
+
+.Fix {
+  grid-area: Fix;
+}
+
+.Done {
+  grid-area: Done;
+}
+
+.board {
+  height: 100%;
+  background-color: gainsboro;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+.board h3 {
+  margin: 0.5rem 0;
+}
+
+.task-block {
+  display: flex;
+  flex-direction: column;
+}
+.task-block .task {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  list-style-type: none;
+  padding: 0;
+  gap: 0.5rem;
+}
+.icons .justify {
+  background: url("IMG/justify_26.png") no-repeat left center;
+}
+.icons .progress {
+  background: url("IMG/checkbox_26.png") no-repeat left center;
+}
+.icons .attach {
+  background: url("IMG/attach_26.png") no-repeat left center;
+}
+.icons .comments {
+  background: url("IMG/comments_26.png") no-repeat left center;
+}
+.icons .a1 {
+  background: url("IMG/avatar_1.png") no-repeat center;
+}
+.icons .a2 {
+  background: url("IMG/avatar_2.png") no-repeat center;
+}
+.icons .a3 {
+  background: url("IMG/avatar_3.png") no-repeat center;
+}
+.icons .a4 {
+  background: url("IMG/avatar_4.png") no-repeat center;
+}
+.icons .justify, .icons .progress, .icons .attach, .icons .comments {
+  background-size: 1rem;
+  padding-left: 1.2rem;
+}
+.icons .avatar {
+  background-size: 2rem;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.icons li:last-child {
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=Style.css.map */
